@@ -4,25 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minha Página de Links</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <input type="file" id="img-input" accept="image/*"><br>
-    <img id="profile-pic" src="" alt="Foto de Perfil"><br>
-    <h1>Meus Links</h1>
-    <a href="https://www.instagram.com" class="link">Instagram</a>
-    <a href="https://www.twitter.com" class="link">Twitter</a>
-    <a href="https://www.linkedin.com" class="link">LinkedIn</a>
-    <a href="https://www.youtube.com" class="link">YouTube</a>
-    <input type="text" id="link-title" placeholder="Nome do link">
-    <input type="url" id="link-url" placeholder="URL do link">
-    <button onclick="addLink()">Adicionar Link</button>
-  </div>
+  <main class="container">
+    <header>
+      <label for="img-input" class="custom-file">📁</label>
+      <input type="file" id="img-input" accept="image/*" hidden>
+      <img id="profile-pic" src="" alt="Foto de perfil do usuário"><br>
+      <h1>Meus Links</h1>
+    </header>
 
-   <div id="links-container"></div>
+    <section id="fixed-links">
+      <a href="https://www.instagram.com" class="link" target="_blank" aria-label="Instagram">Instagram</a>
+      <a href="https://www.twitter.com" class="link" target="_blank" aria-label="Twitter">Twitter</a>
+      <a href="https://www.linkedin.com" class="link" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://www.youtube.com" class="link" target="_blank" aria-label="YouTube">YouTube</a>
+    </section>
 
+    <form id="add-link-form">
+      <input type="text" id="link-title" placeholder="Nome do link" required>
+      <input type="url" id="link-url" placeholder="URL do link" required>
+      <button type="submit">Adicionar Link</button>
+    </form>
 
-  <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+    <section id="links-container"></section>
+    <p id="feedback" class="hidden"></p>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
