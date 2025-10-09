@@ -8,12 +8,21 @@
 </head>
 <body>
   <div class="container">
+    <input type="file" id="img-input" accept="image/*"><br>
+    <img id="profile-pic" src="" alt="Foto de Perfil"><br>
     <h1>Meus Links</h1>
     <a href="https://www.instagram.com" class="link">Instagram</a>
     <a href="https://www.twitter.com" class="link">Twitter</a>
     <a href="https://www.linkedin.com" class="link">LinkedIn</a>
     <a href="https://www.youtube.com" class="link">YouTube</a>
+    <input type="text" id="link-title" placeholder="Nome do link">
+    <input type="url" id="link-url" placeholder="URL do link">
+    <button onclick="addLink()">Adicionar Link</button>
   </div>
+
+   <div id="links-container"></div>
+
+
   <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
 </body>
 </html>
