@@ -4,29 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minha Página de Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/43aec8cabf.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="assets/m.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dia13.css">
 </head>
 <body>
   <main class="container">
     <header>
-      <label for="img-input" class="custom-file">📁</label>
-      <input type="file" id="img-input" accept="image/*" hidden>
-      <img id="profile-pic" src="" alt="Foto de perfil do usuário"><br>
-      <h1>Meus Links</h1>
+      <!-- <label for="img-input" class="custom-file">📁</label> -->
+      <!-- <input type="file" id="img-input" accept="image/" hidden> -->
+      <img id="profile-pic" src="assets/diana.png" alt="Foto de perfil do usuário"><br>
+       <div class="loading">
+        <span>M</span>
+        <span>E</span>
+        <span>U</span>
+        <span>S</span>
+        <span>L</span>
+        <span>I</span>
+        <span>N</span>
+        <span>Ks</span>
+        <span><i class="fa-brands fa-shopify"></i></span>
+    </div>
     </header>
 
     <section id="fixed-links">
-      <a href="https://www.instagram.com" class="link" target="_blank" aria-label="Instagram">Instagram</a>
-      <a href="https://www.twitter.com" class="link" target="_blank" aria-label="Twitter">Twitter</a>
-      <a href="https://www.linkedin.com" class="link" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-      <a href="https://www.youtube.com" class="link" target="_blank" aria-label="YouTube">YouTube</a>
+      <div>
+        <a href="https://www.instagram.com/vinicius_.bh/#" class="link" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> Instagram🔗</a>
+      </div>
+      <div>
+        <a href="https://www.tiktok.com" class="link" target="_blank" aria-label="Tik Tok"><i class="fa-brands fa-tiktok"></i> Tik Tok🔗</a>
+      </div>
+      <div>
+        <a href="https://api-shein.shein.com/h5/sharejump/appjump?link=l5xzYegEkqA_9_1&localcountry=BR" class="link" target="_blank" aria-label="tiara Rapunzel ">👑 Rapunzel🔗</a>
+      </div>
+      <div>
+        <a href="https://api-shein.shein.com/h5/sharejump/appjump?link=l5xhKDNFmnN_9_1&localcountry=BR" class="link" target="_blank" aria-label="top Lavagirl">👗 Lavagirl🔗</a>
+      </div>
+      <div>
+        <a href="https://api-shein.shein.com/h5/sharejump/appjump?link=l5xh3GGc3hk_9_1&localcountry=BR" class="link" target="_blank" aria-label="conjunto saia Tartaruga">👗 Tartaruga ninja🔗</a>
+      </div>
+      <div>
+        <a href="https://api-shein.shein.com/h5/sharejump/appjump?link=l5xhIAmbhnP_9_1&localcountry=BR" class="link" target="_blank" aria-label="oculos Minions">🕶️ Minions🔗</a>
+      </div>
     </section>
 
-    <form id="add-link-form">
+    <!-- <form id="add-link-form">
       <input type="text" id="link-title" placeholder="Nome do link" required>
       <input type="url" id="link-url" placeholder="URL do link" required>
       <button type="submit">Adicionar Link</button>
-    </form>
+    </form> -->
 
     <section id="links-container"></section>
     <p id="feedback" class="hidden"></p>
