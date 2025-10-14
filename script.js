@@ -7,20 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // --- IMAGEM DE PERFIL ---
-  const savedImage = localStorage.getItem('profilePic');
-  profilePic.src = savedImage || 'https://via.placeholder.com/100';
+  // const savedImage = localStorage.getItem('profilePic');
+  // profilePic.src = savedImage || 'https://via.placeholder.com/100';
 
-  imgInput.addEventListener('change', () => {
-    const file = imgInput.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = () => {
-        profilePic.src = reader.result;
-        localStorage.setItem('profilePic', reader.result);
-      };
-      reader.readAsDataURL(file);
-    }
-  });
+  // imgInput.addEventListener('change', () => {
+  //   const file = imgInput.files[0];
+  //   if (file) {
+  //     const reader = new FileReader();
+  //     reader.onload = () => {
+  //       profilePic.src = reader.result;
+  //       localStorage.setItem('profilePic', reader.result);
+  //     };
+  //     reader.readAsDataURL(file);
+  //   }
+  // });
 
   // --- RENDERIZAR LINKS ---
   function renderLinks() {
