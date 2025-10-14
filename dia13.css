@@ -6,7 +6,7 @@ span
 {
 font-family: Georgia, 'Times New Roman', Times, serif;
 margin: 0 2px;
-font-size: 20px;
+font-size: 24px;
 animation: loading 5s linear infinite alternate-reverse;
 }
 
