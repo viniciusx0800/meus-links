@@ -58,6 +58,7 @@ h1 {
 }
 
 .social-icons a {
+  text-decoration: none;
   width: 50px;
   height: 50px;
   display: flex;
@@ -86,10 +87,10 @@ h1 {
 
 .link {
   display: block;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.116);
   padding: 12px;
   border-radius: 10px;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
