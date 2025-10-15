@@ -57,7 +57,7 @@ Este projeto foi desenvolvido com o propósito de:
 
 ## 📸 Demonstração
 
-![](image-1.png)
+![](image.png)
 
 ---
 
